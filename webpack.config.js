@@ -22,8 +22,21 @@ module.exports = {
             presets: ['es2015', 'react']
           }
         },
-        { test: /\.json$/, loader: 'json-loader' }
-      ]
+        { test: /\.json$/, loader: 'json-loader' },
+        {
+            test: /\.scss$/,
+            use: [{
+                      loader: "style-loader"
+                  }, {
+                      loader: "css-loader"
+                  }, {
+                      loader: "sass-loader",
+                      options: {
+                        includePaths: ['./node_modules', './node_modules/grommet/node_modules']
+                      }
+                  }
+            ],
+        }]
     },
     externals: {
         //don't bundle the 'react' npm package with our bundle.js
@@ -39,6 +52,7 @@ module.exports = {
       net: 'empty',
       tls: 'empty'
     },
+    
     devtool: 'source-map',
     plugins: [
       new webpack.HotModuleReplacementPlugin()
