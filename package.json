@@ -1,0 +1,43 @@
+{
+  "name": "g3_2017",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "./node_modules/.bin/http-server -p 8070",
+    "dev": "webpack-dev-server -d --colors --port 8090"
+  },
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-react": "latest",
+    "classnames": "latest",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "latest",
+    "grommet": "^1.4.0",
+    "json-loader": "^0.5.4",
+    "react": "latest",
+    "react-addons-pure-render-mixin": "latest",
+    "react-dom": "latest",
+    "react-hot-loader": "latest",
+    "react-redux": "latest",
+    "redux": "latest",
+    "redux-thunk": "^2.2.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "underscore": "~1.8.3",
+    "webpack": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avilcan/g3_2017.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avilcan/g3_2017/issues"
+  },
+  "homepage": "https://github.com/avilcan/g3_2017#readme"
+}
