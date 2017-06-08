@@ -1,5 +1,6 @@
 //import styles
 import 'grommet/scss/vanilla/index.scss';
+import './styles/custom-style.scss';
 
 import react from 'react';
 import ReactDOM from 'react-dom';
