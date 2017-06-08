@@ -16,8 +16,8 @@ const mapStateToProps = (state) => ({});
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    dispatchLoginUser: (username, pass) => {
-      dispatch(loginUser(username, pass))
+    dispatchLoginUser: (payload) => {
+      dispatch(loginUser(payload))
     }
   }
 }

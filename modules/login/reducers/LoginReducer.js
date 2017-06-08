@@ -19,12 +19,9 @@ function loggedInUser(resp) {
  * Async Actions
  */
 
-export function loginUser(user, pass) {
+export function loginUser(payload) {
     return dispatch => {
-        login({
-            username: user,
-            password: pass,
-        }).then(
+        login(payload).then(
             response => dispatch(loggedInUser(response))
         )
     }

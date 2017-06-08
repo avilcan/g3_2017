@@ -1,6 +1,7 @@
 import rp from 'request-promise';
 
 export async function login(payload) {
+    console.log(payload);
     const options = {
         method: 'POST',
         uri: 'https://10.68.162.96/ptoApp/login',
