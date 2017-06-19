@@ -14,7 +14,7 @@ class LoginContainer extends React.Component {
     }
   }
   loginUser(payload) {
-    this.props.dispatchLoginUser(payload);
+    //this.props.dispatchLoginUser(payload);
     // we should redirect user only after login is complete
     this.setState({
       redirect: true,

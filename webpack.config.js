@@ -44,7 +44,7 @@ module.exports = {
         'react': 'React'
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx','.json']
     },
     node: {
       console: true,
